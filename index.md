@@ -8,16 +8,16 @@ title: Home
     <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Chao Zhang">
   </div>
   <div class="profile-info">
-    <h1>Chao Zhang</h1>
-    <div class="title">James Edenfield Assistant Professor</div>
-    <div class="affiliation"><a href="#">School of Computational Science and Engineering</a></div>
-    <div class="affiliation"><a href="#">College of Computing</a></div>
-    <div class="affiliation"><a href="#">Georgia Institute of Technology</a></div>
+    <h1>Chris Sainsbury</h1>
+    <div class="title">Consultant Physician, Diabetes & Endocrinology. NHS Greater Glasgow & Clyde</div>
+    <div class="affiliation"><a href="#">Hon Senior Research Fellow; Institute of Applied Health Research, University of Birmingham</a></div>
+    <div class="affiliation"><a href="#">Hon Clinical Senior Lecturer; Institute of Cardiovascular and Medical Sciences, University of Glasgow</a></div>
+    <div class="affiliation"><a href="#">NRS Senior Research Fellow</a></div>
+    <div class="affiliation"><a href="#">Clinical AI Lead, MyWay Digital Health</a></div>
     
     <div class="contact">
-      <p><strong>Office:</strong> CODA E1358B</p>
-      <p><strong>Address:</strong> 756 W Peachtree St NW, Atlanta, GA 30308</p>
-      <p><strong>Email:</strong> <a href="mailto:chaozhang@gatech.edu">chaozhang@gatech.edu</a></p>
+      <p><strong>Address:</strong> Diabetes Centre, Gartnavel General Hospital</p>
+      <p><strong>Email:</strong> <a href="mailto:chris.sainsbury@nhs.scot">chris.sainsbury@nhs.scot</a></p>
     </div>
   </div>
 </div>
