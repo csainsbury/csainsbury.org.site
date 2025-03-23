@@ -1,0 +1,84 @@
+/* Publication page styles */
+
+.publications-container {
+  margin-bottom: 2rem;
+}
+
+.year-section {
+  margin-bottom: 2rem;
+  
+  h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.publications-list {
+  list-style-type: none;
+  padding-left: 0;
+  
+  .publication-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #0000EE;
+    }
+  }
+  
+  .publication-title {
+    margin-bottom: 0.3rem;
+    
+    strong {
+      font-weight: 600;
+    }
+  }
+  
+  .publication-authors {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+  }
+  
+  .publication-venue {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    
+    em {
+      font-style: italic;
+    }
+  }
+  
+  .publication-links {
+    font-size: 0.9rem;
+    
+    a {
+      color: #0000EE;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Highlighted publications */
+.publication-item.highlight {
+  background-color: rgba(255, 255, 0, 0.1);
+  border-left: 3px solid #ffd700;
+  padding-left: 1.2rem;
+  
+  &:before {
+    display: none;
+  }
+}

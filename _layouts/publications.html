@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="publications-container">
+  <h1>{{ page.title }}</h1>
+  
+  {{ content }}
+  
+  {% assign years = site.data.publication_years %}
+  {% assign publications_by_year = site.data.publications_by_year %}
+  
+  {% for year in years %}
+    <section id="{{ year }}" class="year-section">
+      <h2>{{ year }}</h2>
+      
+      <ul class="publications-list">
+        {% for pub in publications_by_year[year] %}
+          <li class="publication-item">
+            <div class="publication-title">
+              <strong>{{ pub.Title }}</strong>
+            </div>
+            <div class="publication-authors">
+              {{ pub.Authors }}
+            </div>
+            <div class="publication-venue">
+              <em>{{ pub.Publication }}{% if pub.Volume %}, {{ pub.Volume }}{% endif %}{% if pub.Number %}({{ pub.Number }}){% endif %}{% if pub.Pages %}: {{ pub.Pages }}{% endif %}</em>{% if pub.Publisher %}, {{ pub.Publisher }}{% endif %}, {{ pub.Year }}
+            </div>
+            <div class="publication-links">
+              <a href="#" class="pdf-link">PDF</a> |
+              <a href="#" class="code-link">Code</a> |
+              <a href="#" class="project-link">Project Page</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+  
+  {% if page.show_earlier and years.size > 0 %}
+    <section id="earlier" class="year-section">
+      <h2>Earlier</h2>
+      <!-- Content for publications before the cutoff year -->
+    </section>
+  {% endif %}
+</div>
