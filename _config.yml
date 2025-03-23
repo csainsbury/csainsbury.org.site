@@ -1,5 +1,39 @@
-# _config.yml
-title: "Chris Sainsbury"
-description: "Minimal personal website"
-baseurl: ""
-url: "https://csainsbury.org"
+# Site settings
+title: Chris Sainsbury
+email: 
+description: >-
+  Academic profile of Chris Sainsbury
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache

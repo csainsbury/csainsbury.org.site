@@ -1,55 +1,61 @@
-/* assets/css/style.css */
-
-/* Reset some default spacing */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
-body {
+html, body {
   background: #fff;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Container centers content and limits the width */
+/* Centered container */
 .container {
   max-width: 640px;
   margin: 0 auto;
-  padding: 4rem 1rem;
+  padding: 80px 20px;
   text-align: center;
 }
 
-/* Main header styling */
+/* Main heading styles */
 h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.05em;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.03em;
 }
 
-/* Paragraph styling */
+/* Secondary headings, if any */
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0.75em;
+}
+
+/* Paragraph styles */
 p {
-  margin-bottom: 1.5rem;
   font-size: 1.125rem;
+  margin-bottom: 1.5em;
 }
 
 /* Link styling */
 a {
-  color: inherit;
+  color: #333;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  transition: border-bottom 0.3s ease;
 }
 
 a:hover {
-  border-color: #333;
+  border-bottom: 1px solid #333;
 }
 
-/* Optional: spacing for navigation links if you add them later */
+/* Optional: additional spacing for navigation links */
 .nav-links {
   margin-top: 2rem;
 }

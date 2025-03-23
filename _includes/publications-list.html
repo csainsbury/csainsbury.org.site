@@ -1,0 +1,37 @@
+{% comment %}
+  Include for displaying publications dynamically from _data/publications.yml
+  Usage: {% include publications-list.html %}
+{% endcomment %}
+
+{% for year_group in site.data.publications %}
+  <h2 id="{{ year_group.year }}">{{ year_group.year }}</h2>
+  
+  <div class="publications-list">
+    {% for paper in year_group.papers %}
+      <div class="publication-item {% if paper.highlight %}highlighted{% endif %}">
+        <div class="publication-title">
+          <strong>{{ paper.title }}</strong>
+        </div>
+        <div class="publication-authors">
+          {{ paper.authors }}
+        </div>
+        <div class="publication-venue">
+          <em>{{ paper.venue }}</em>, {{ year_group.year }}
+        </div>
+        <div class="publication-links">
+          {% if paper.links.pdf %}
+            <a href="{{ paper.links.pdf }}" target="_blank">PDF</a> |
+          {% endif %}
+          
+          {% if paper.links.code %}
+            <a href="{{ paper.links.code }}" target="_blank">Code</a> |
+          {% endif %}
+          
+          {% if paper.links.project %}
+            <a href="{{ paper.links.project }}" target="_blank">Project Page</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}

@@ -1,0 +1,50 @@
+// Layout specific styles
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    position: relative;
+  }
+  
+  .main-content {
+    padding: 0;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+  }
+  
+  .profile-image {
+    width: 150px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+// Print styles
+@media print {
+  .sidebar {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
