@@ -6,27 +6,22 @@ main:
   - title: "Publications"
     url: /publications
     
-  - title: "Teaching"
+  - title: "Supervision"
     url: /teaching
     
-  - title: "Students"
-    url: /students
     
-  - title: "Awards"
-    url: /awards
-
 # Research topics navigation
 research_topics:
-  - title: "I. Data-Centric LLM"
+  - title: "I. Topic a"
     url: /research#data-centric-llm
     
-  - title: "II. LLM Agents"
+  - title: "II. Topic b"
     url: /research#llm-agents
     
-  - title: "III. AI Alignment"
+  - title: "III. Topic c"
     url: /research#ai-alignment
     
-  - title: "IV. AI for Science"
+  - title: "IV. Topic d"
     url: /research#ai-for-science
 
 # Publication years
@@ -64,10 +59,3 @@ quick_links:
     url: "https://scholar.google.com"
     external: true
     
-  - title: "CX4240"
-    url: "#"
-    external: false
-    
-  - title: "CSE8803"
-    url: "#"
-    external: false
